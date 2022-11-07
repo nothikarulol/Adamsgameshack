@@ -81,8 +81,68 @@
             <div class="text">Settings</div>
             <div class="text">You can change the color of the site + more!</div>
            
-    </button>
             </section>
+        <div class="pageHeading">Personalization</div>
+        <div class="pageDescription" style="width: 100%; padding: 0px 5%; transform: translateY(-10px)">Personalize the site to your likings.</div>
+        <div class="setting">
+            <div class="settingsTitle">Mode</div>
+            <div class="pageDescription">Change the website's appearance by a dark and a light contrast.</div>
+            <select class="settingsSelect" id="modeSelect">
+                <option class="settingsSelectOption">Dark</option>
+                <option class="settingsSelectOption">Dark Themed</option>
+                <option class="settingsSelectOption">Light</option>
+            </select>
+            <br>
+            <div class="settingsTitle">Theme Color</div>
+            <div class="pageDescription">This changes the website's main color that you might see when using light or dark themed mode.</div>
+            <select class="settingsSelect" id="themeSelect">
+                <option class="settingsSelectOption">Purple (Default)</option>
+                <option class="settingsSelectOption">Custom</option>
+                <option class="settingsSelectOption">Yellow</option>
+                <option class="settingsSelectOption">Orange</option>
+                <option class="settingsSelectOption">Green</option>
+                <option class="settingsSelectOption">Light Blue</option>
+                <option class="settingsSelectOption">Red</option>
+            </select>
+            <input name="Color Picker" type="color" class="color_picker" id="theme_color_picker" oninput="setTheme()">
+            <br>
+            <div class="settingsTitle">Tab Cloak</div>
+            <div class="pageDescription">This changes the website icon and title to help hide this among your tabs. <b>Note: This may not be working correctly.</b></div>
+            <select class="settingsSelect" id="cloakSelect">
+                <option class="settingsSelectOption">Default</option>
+                <option class="settingsSelectOption">Google Slides</option>
+                <option class="settingsSelectOption">Google Docs</option>
+                <option class="settingsSelectOption">Google Drive</option>
+                <option class="settingsSelectOption">Schoology</option>
+                <option class="settingsSelectOption">Desmos</option>
+            </select>
+            <br>
+            <div class="settingsTitle">Show Game Thumbnail</div>
+            <div class="pageDescription">This toggles whether to show the game thumbnail or not. This can also improve faster loading times and help reduce network usage.</div>
+            <div class="settingsSwitch" onclick="gameIconSetting(true)">
+                <span class="switchBack"></span>
+                <span class="switchDot" id="gameIconSwitch"></span>
+            </div>
+            <br>
+            <div class="settingsTitle">Hide Alt Links Button</div>
+            <div class="pageDescription">If you prefer it, this will hide the alt links button on the sidebar.</div>
+            <div class="settingsSwitch" onclick="altLinksSetting(true)">
+                <span class="switchBack"></span>
+                <span class="switchDot" id="altLinksSwitch"></span>
+            </div>
+            <br>
+        </div>
+        <div class="pageLine"></div>
+        <br>
+        <div class="pageHeading">Other</div>
+        <div class="pageDescription" style="width: 100%; padding: 0px 5%; transform: translateY(-10px)">Other general site settings. Some of this might be useful others not.</div>
+        <div class="setting">
+            <div class="settingsTitle">Open Sidebar by Default</div>
+            <div class="pageDescription">This will keep the sidebar open and only close when you play a game or if you close it.</div>
+            <div class="settingsSwitch" onclick="openSidebarSetting(true)">
+                <span class="switchBack"></span>
+                <span class="switchDot" id="openSidebarSwitch"></span>
+            </div>
             
         <script>
             const body = document.querySelector('body'),
