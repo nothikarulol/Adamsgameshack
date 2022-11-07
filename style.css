@@ -325,6 +325,7 @@ body {
   background-color: #1b1b1d;
   display:flex;
   justify-content: center;
+  align-items: center;
  
 }
 .loader {
