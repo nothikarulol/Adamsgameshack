@@ -1,2 +1,84 @@
-<body style="background-color:black;">
-</body>
+<!doctype html>
+<html lang="en"
+    <head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="style.css" />
+
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+        <!--<title>Dashboard Sidebar Menu</title>--> 
+    </head>
+    <body>
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <img src="https://i.ibb.co/XZZNLDt/logo.png" alt="">
+                    </span>
+    
+                    <div class="text logo-text">
+                        <div class="title">AnimeDuo</div>
+                    </div>
+                </div>
+    
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
+    
+            <div class="menu-bar">
+                <div class="menu">
+
+                    </li>
+    
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="./index.html">
+                                <i class='bx bx-home-alt icon' ></i>
+                                <span class="text nav-text">Home</span>
+                            </a>
+                        </li>
+    
+                        <li class="nav-link">
+                            <a href="./Games.html">
+                                <i class='bx bx-joystick icon' ></i>
+                                <span class="text nav-text">Games</span>
+                            </a>
+                        </li>
+                    <div class="bottom-content" style="transform: translateY(-40%);">
+                        <li class="nav-link">
+                            <a href="./Settings.html">
+                                <i class='bx bx-cog icon' ></i>
+                                <span class="text nav-text">Settings</span>
+                            </a>
+                        </div>
+                    </li>
+    
+        </nav>
+    
+        <section class="home">
+            <div class="text">Welcome to AnimeDuo!</div>
+            <div class="text">
+        </section>
+    
+        <script>
+            const body = document.querySelector('body'),
+          sidebar = body.querySelector('nav'),
+          toggle = body.querySelector(".toggle"),
+          modeText = body.querySelector(".mode-text");
+    
+    
+    toggle.addEventListener("click" , () =>{
+        sidebar.classList.toggle("close");
+    })
+    
+    searchBtn.addEventListener("click" , () =>{
+        sidebar.classList.remove("close");
+    })
+    
+        </script>
+    
+    </body>
+    </html>
