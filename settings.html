@@ -13,9 +13,10 @@
         <!--<title>Dashboard Sidebar Menu</title>--> 
     </head>
     <body>
-         <div class="loader_bg">
+        <div class="loader_bg">
     <div class="loader"></div>
 </div>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         setTimeout(function(){
@@ -23,13 +24,15 @@
         }, 1500);
     </script>
         
+        
         <nav class="sidebar close">
             <header>
                 <div class="image-text">
                     <span class="image">
                         <img src="https://i.ibb.co/XZZNLDt/logo.png" alt="">
                     </span>
-    
+                     <title>AnimeDuo</title>
+                    <link rel="icon" herf="https://i.ibb.co/XZZNLDt/logo.png" type="image/png">
                     <div class="text logo-text">
                         <div class="title">AnimeDuo</div>
                     </div>
@@ -57,7 +60,12 @@
                                 <span class="text nav-text">Games</span>
                             </a>
                         </li>
-                    <div class="bottom-content" style="transform: translateY(-40%);">
+                         <li class="nav-link" id="altLinks">
+                        <a href="" onclick="window.open('https://bit.ly/3t2y6Hv', '_blank')">
+                            <i class='bx bx-link-alt icon' ></i>
+                            <span class="text nav-text">Alt Links</span>
+                        </a>
+                    </li>
                         <li class="nav-link">
                             <a href="./Settings.html">
                                 <i class='bx bx-cog icon' ></i>
@@ -69,10 +77,13 @@
         </nav>
     
         <section class="home">
-            <div class="text">Welcome to AnimeDuo!</div>
-            <div class="text">
-        </section>
-    
+            <br>
+            <div class="text">Settings</div>
+            <div class="text">You can change the color of the site + more!</div>
+           
+    </button>
+            </section>
+            
         <script>
             const body = document.querySelector('body'),
           sidebar = body.querySelector('nav'),
@@ -88,7 +99,6 @@
         sidebar.classList.remove("close");
     })
     
-        </script>
-    
+    </script>
     </body>
     </html>
