@@ -25,13 +25,14 @@
   justify-content: center;
   background: #333333;
   transition: opacity 0.75s, visibility 0.75s;
-      }
-            
-  .loader--hidden {
+}
+
+.loader--hidden {
   opacity: 0;
   visibility: hidden;
 }
-  .loader::after {
+
+.loader::after {
   content: "";
   width: 75px;
   height: 75px;
@@ -39,8 +40,9 @@
   border-top-color: #009578;
   border-radius: 50%;
   animation: loading 0.75s ease infinite;
-     }
-            @keyframes loading {
+}
+
+@keyframes loading {
   from {
     transform: rotate(0turn);
   }
@@ -48,7 +50,7 @@
     transform: rotate(1turn);
   }
 }
-     </script>
+        </style>
         <div class="loader loader--hidden"></div>   
      
         
