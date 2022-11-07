@@ -13,57 +13,9 @@
         <!--<title>Dashboard Sidebar Menu</title>--> 
     </head>
     <body>
-        <style>
-        .loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #333333;
-  transition: opacity 0.75s, visibility 0.75s;
-}
-
-.loader--hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.loader::after {
-  content: "";
-  width: 75px;
-  height: 75px;
-  border: 15px solid #dddddd;
-  border-top-color: #009578;
-  border-radius: 50%;
-  animation: loading 0.75s ease infinite;
-}
-
-@keyframes loading {
-  from {
-    transform: rotate(0turn);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
-        </style>
-
-        <script>
-            window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader");
-
-  loader.classList.add("loader--hidden");
-
-  loader.addEventListener("transitionend", () => {
-    document.body.removeChild(loader);
-  });
-      }); </script>
-        <div class="loader loader--hidden"></div>   
-     
+        <div class="loader_bg">
+    <div class="loader"></div>
+</div>
         
         <nav class="sidebar close">
             <header>
@@ -116,13 +68,7 @@
             <div class="text">Welcome to AnimeDuo!</div>
             <div class="text">The best anime and game site out there!</div>
         </section>
-            <br>
-        <div class="homeSection">
-                <div class="homeSectionTitle"><b>Introducing Beta!</b></div>
-                <div class="homeSectionText">The beta has been in the works for a long time now! This is the first launch of the site!<br><br><b> want to play games? Click the games tab or</b></div>
-                <div onclick="window.location = 'games.html'" class="homeSectionPlayBtn">Click Here to Start Playing</div>
-            </div>
-        </div>
+            
         <script>
             const body = document.querySelector('body'),
           sidebar = body.querySelector('nav'),
