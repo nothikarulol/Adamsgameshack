@@ -13,6 +13,17 @@
         <!--<title>Dashboard Sidebar Menu</title>--> 
     </head>
     <body>
+        
+         <div class="loader_bg">
+    <div class="loader"></div>
+</div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+        
         <nav class="sidebar close">
             <header>
                 <div class="image-text">
