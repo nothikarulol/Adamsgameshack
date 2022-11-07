@@ -316,14 +316,23 @@ body, html {
 body {
   background-color: #242F3F;
 }
-
+.loaderwrapper{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1b1b1d;
+  display:flex;
+  justify-content: center;
+ 
+}
 .loader {
   display: inline-block;
   width: 30px;
   height: 30px;
   position: relative;
   border: 4px solid #Fff;
-  top: 50%;
   animation: loader 2s infinite ease;
 }
 
