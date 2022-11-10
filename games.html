@@ -13,18 +13,10 @@
         <!--<title>Dashboard Sidebar Menu</title>--> 
     </head>
     <body>
-        
-         <button oneclick="window.open('google.com' '_blank)">
-         <button>
-                                                                          
-          <button id="example-btn">Open example in new tab</button>
-                                              
-          <script src="index.js"></script>
-    
-        
-         <div class="loader_bg">
+        <div class="loader_bg">
     <div class="loader"></div>
 </div>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         setTimeout(function(){
@@ -32,13 +24,15 @@
         }, 1500);
     </script>
         
+        
         <nav class="sidebar close">
             <header>
                 <div class="image-text">
                     <span class="image">
                         <img src="https://i.ibb.co/XZZNLDt/logo.png" alt="">
                     </span>
-    
+                     <title>AnimeDuo</title>
+                    <link rel="icon" herf="https://i.ibb.co/XZZNLDt/logo.png" type="image/png">
                     <div class="text logo-text">
                         <div class="title">AnimeDuo</div>
                     </div>
@@ -61,13 +55,19 @@
                         </li>
     
                         <li class="nav-link">
-                            <a href="./Games.html">
+                            <a href="./games.html">
                                 <i class='bx bx-joystick icon' ></i>
                                 <span class="text nav-text">Games</span>
                             </a>
                         </li>
+                         <li class="nav-link" id="altLinks">
+                        <a href="" onclick="window.open('https://bit.ly/3t2y6Hv', '_blank')">
+                            <i class='bx bx-link-alt icon' ></i>
+                            <span class="text nav-text">Alt Links</span>
+                        </a>
+                    </li>
                         <li class="nav-link">
-                            <a href="./Settings.html">
+                            <a href="./settings.html">
                                 <i class='bx bx-cog icon' ></i>
                                 <span class="text nav-text">Settings</span>
                             </a>
